@@ -5,10 +5,7 @@
  */
 package javaapplication6;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.HashMap;
-import java.util.Date;
 import javax.swing.JOptionPane;
 
 /**
@@ -178,7 +175,7 @@ public class Home extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "Please enter amount", "Error", JOptionPane.ERROR_MESSAGE);
                     s = JOptionPane.showInputDialog(this, "Enter amount");
                 }
-                while (isValid(s)) {
+                while (!isValid(s)) {
                     JOptionPane.showMessageDialog(null, "Please enter numeric amount", "Error", JOptionPane.ERROR_MESSAGE);
                     s = JOptionPane.showInputDialog(this, "Enter amount");
                 }
@@ -200,7 +197,7 @@ public class Home extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "Please enter amount", "Error", JOptionPane.ERROR_MESSAGE);
                     s = JOptionPane.showInputDialog(this, "Enter amount");
                 }
-                while (isValid(s)) {
+                while (!isValid(s)) {
                     JOptionPane.showMessageDialog(null, "Please enter numeric amount", "Error", JOptionPane.ERROR_MESSAGE);
                     s = JOptionPane.showInputDialog(this, "Enter amount");
                 }
